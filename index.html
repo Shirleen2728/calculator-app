@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator | Shirleen Mukami</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-calculator"></i> Calculator App</h1>
+        <p class="subtitle">Built with HTML, CSS & JavaScript</p>
+        
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="result" readonly>
+            </div>
+            <div class="buttons">
+                <button onclick="clearDisplay()" class="operator">C</button>
+                <button onclick="deleteLast()" class="operator">⌫</button>
+                <button onclick="append('%')" class="operator">%</button>
+                <button onclick="append('/')" class="operator">/</button>
+                
+                <button onclick="append('7')">7</button>
+                <button onclick="append('8')">8</button>
+                <button onclick="append('9')">9</button>
+                <button onclick="append('*')" class="operator">×</button>
+                
+                <button onclick="append('4')">4</button>
+                <button onclick="append('5')">5</button>
+                <button onclick="append('6')">6</button>
+                <button onclick="append('-')" class="operator">-</button>
+                
+                <button onclick="append('1')">1</button>
+                <button onclick="append('2')">2</button>
+                <button onclick="append('3')">3</button>
+                <button onclick="append('+')" class="operator">+</button>
+                
+                <button onclick="append('0')" class="zero">0</button>
+                <button onclick="append('.')">.</button>
+                <button onclick="calculate()" class="equals">=</button>
+            </div>
+        </div>
+        
+        <div class="features">
+            <h3><i class="fas fa-star"></i> Features</h3>
+            <ul>
+                <li>Basic arithmetic operations</li>
+                <li>Responsive design</li>
+                <li>Clear and delete functions</li>
+                <li>Error handling</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p>Created by Shirleen Mukami | Chuka University</p>
+            <a href="https://shirleenmukami.github.io" class="portfolio-link">
+                <i class="fas fa-globe"></i> View My Portfolio
+            </a>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
